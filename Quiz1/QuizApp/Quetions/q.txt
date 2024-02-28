@@ -1,0 +1,61 @@
+1)What is ReactJS?
+a)Server side framework
+b)Javscript library
+c)both a& b
+d)none of above 
+
+2)Identify the command used to create a react app?
+a)npm create-react-app
+b)npm install create-react-app appname
+c)npx create-react-app appname
+d)npm install appname
+
+3) Which of the following port is the default where webpack-dev-server runs?
+a)4000
+b)3000
+c)8080
+d)8888
+
+4)In MVC, what does React.js act as?
+a)View
+b)Model
+c)Controller
+d)Middleware
+
+5)State whether true or false: React.js covers only the view layer of the app.
+a)true
+b)false
+
+6) 
+What is ReactJS mainly used for building?
+a)Database
+b)Connectivity
+c)UserInterface
+d)Design Platform
+
+7) Among the following which is used to create a class inheritance?
+a)Inherits
+b)extends
+c)create
+d)This
+
+8)JSX stands for __________
+a)Json
+b)Javascript and angularJs
+c)Json XML
+d)Javascript XML
+
+9) The function which is called to render HTML to a web page in react?
+a)ReactDom_render()
+b)render()
+c)render_DOM()
+d)DOM_HTML
+
+10)Everything in react is a ....................
+a)class
+b)module
+c)package
+d)Component
+_____________________________________________
+Day1:https://poetic-custard-e92da3.netlify.app/
+_____________________________________________
