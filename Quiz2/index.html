@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "quiz">The Quiz App</div>
+    <div class = "flex-margin">
+      <form class = "box" method = "POST" name="quiz" onsubmit = "return false">
+        <div class = "qustions">
+          <span class = "question"> Q1. What command is used to start the React local development server? </span>
+          <span class = "options-part">
+          <input class = "middle-radio" type="radio" name="ans1" value="1">
+          <label style = "background-color: #2b3252"> npm build </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="2">
+          <label style = "background-color: #2b3252">npm serve </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="3">
+          <label style = "background-color: #2b3252"> npm run dev </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans1" value="4">
+          <label style = "background-color: #2b3252"> npm start  </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q2.What are Props in React?</span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="1">
+          <label style = "background-color: #2b3252"> Props are used for styling components in React. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="2">
+          <label style = "background-color: #2b3252"> Props are used to pass data from parent to child components in React. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="3">
+          <label style = "background-color: #2b3252"> Props are used to manage component state in React.  </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans2" value="4">
+          <label style = "background-color: #2b3252"> Props are used to define event handlers in React. </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q3.What is Destructuring of Props in React? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="1">
+          <label style = "background-color: #2b3252">  Destructuring props is a way to extract values from props object in React.  </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="2">
+          <label style = "background-color: #2b3252"> Destructuring props is a way to create multiple props from a single prop object</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="3">
+          <label style = "background-color: #2b3252"> Destructuring props is a way to pass props from child to parent components. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans3" value="4">
+          <label style = "background-color: #2b3252"> Destructuring props is not supported in React. </label>
+          </span>
+        </div>
+
+
+        <div class="qustions">
+          <span class="question"> Q4. What is State ? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="1">
+          <label style = "background-color: #2b3252"> State is used to pass data from a parent component to a child component. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="2">
+          <label style = "background-color: #2b3252"> State is used to manage component-specific data that may change over time.</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="3">
+          <label style = "background-color: #2b3252"> State is used to define props within a component. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans4" value="4">
+          <label style = "background-color: #2b3252"> State is used for handling events in React components </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q5. What is Destructuring of state​? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="1">
+          <label style = "background-color: #2b3252"> Destructuring state involves removing state from a component. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="2">
+          <label style = "background-color: #2b3252">Destructuring state involves breaking down a JavaScript object into individual variables.</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="3">
+          <label style = "background-color: #2b3252">Destructuring state involves converting state into strings. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans5" value="4">
+          <label style = "background-color: #2b3252">  Destructuring state involves updating state dynamically.</label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q6. Conditional Rendering​? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="1">
+          <label style = "background-color: #2b3252"> Conditional rendering involves rendering components based on certain conditions. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="2">
+          <label style = "background-color: #2b3252"> Conditional rendering is used for event handling in React.</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="3">
+          <label style = "background-color: #2b3252"> Conditional rendering involves destructuring props and state. </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans6" value="4">
+          <label style = "background-color: #2b3252"> Conditional rendering is a method of styling components in React. </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q7. Identify the one which is used to pass data to components from outside </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="1">
+          <label style = "background-color: #2b3252"> render with arguments </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="2">
+          <label style = "background-color: #2b3252"> props</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="3">
+          <label style = "background-color: #2b3252"> propsTypes </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans7" value="4">
+          <label style = "background-color: #2b3252"> setState </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q8. A state in React.js is also known as? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans8" value="1">
+          <label style = "background-color: #2b3252"> The internal storage of comp  </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans8" value="2">
+          <label style = "background-color: #2b3252"> The external storage of comp</label>
+          </span>
+          <span class="options-part">
+            <input class="middle-radio" type="radio" name="ans8" value="2">
+            <label style = "background-color: #2b3252"> Permenant storage</label>
+            </span>
+            <span class="options-part">
+              <input class="middle-radio" type="radio" name="ans8" value="2">
+              <label style = "background-color: #2b3252">  All</label>
+              </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Q9. Identify the smallest building block of React.JS. </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="1">
+          <label style = "background-color: #2b3252"> Props </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="2">
+          <label style = "background-color: #2b3252"> Elements</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="3">
+          <label style = "background-color: #2b3252"> Components </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans9" value="4">
+          <label style = "background-color: #2b3252"> None of above </label>
+          </span>
+        </div>
+
+        <div class="qustions">
+          <span class="question"> Which of the following are two ways to handle data in react? </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="1">
+          <label style = "background-color: #2b3252"> State and Props </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="2">
+          <label style = "background-color: #2b3252"> State and services</label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="3">
+          <label style = "background-color: #2b3252"> State and Components </label>
+          </span>
+          <span class="options-part">
+          <input class="middle-radio" type="radio" name="ans10" value="4">
+          <label style = "background-color: #2b3252"> Services and Components </label>
+          </span>
+        </div>
+
+        <button   type="submit" class="button" onclick="calcScore()">Submit</button>
+  </form>
+      <div class="score-box">
+        <span class="score-txt">Score:</span><br><br>
+        <span id="qzs" class="score-value"> 0 </span>
+        <span class="score-value"> /10 </span>
+      </div>
+    </div>
+
+   <script src="./index.js"></script> 
+</body>
+</html>

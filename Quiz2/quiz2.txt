@@ -1,0 +1,71 @@
+
+1)What command is used to start the React local development server?
+a)npm build
+b)npm serve
+c)npm run dev
+d)npm start
+
+2)What are Props in React?
+a) Props are used for styling components in React.
+b) Props are used to pass data from parent to child components in React.   C
+c) Props are used to manage component state in React. 
+d) Props are used to define event handlers in React.
+
+2)What is Destructuring of Props in React?
+a) Destructuring props is a way to extract values from props object in React.    C
+b) Destructuring props is a way to create multiple props from a single prop object.
+c) Destructuring props is a way to pass props from child to parent components.
+d) Destructuring props is not supported in React.
+
+3)What is State ?
+a) State is used to pass data from a parent component to a child component.
+b) State is used to manage component-specific data that may change over time.  C
+c) State is used to define props within a component.
+d) State is used for handling events in React components.
+
+4)What is Destructuring of state​?
+a) Destructuring state involves removing state from a component.
+b) Destructuring state involves breaking down a JavaScript object into individual variables.  C
+c) Destructuring state involves converting state into strings.
+d) Destructuring state involves updating state dynamically.
+
+
+5)Conditional Rendering​?
+a) Conditional rendering involves rendering components based on certain conditions.  C
+b) Conditional rendering is used for event handling in React.
+c) Conditional rendering involves destructuring props and state.
+d) Conditional rendering is a method of styling components in React.
+
+6) Identify the one which is used to pass data to components from outside
+a) render with arguments
+b)setState
+c)props      C
+d)propstype
+
+7) A state in React.js is also known as?
+a)The internal storage of comp    C
+b)The external storage of comp
+c)Permenant storage
+d) All
+
+8) Identify the smallest building block of React.JS.
+a)Props
+b)Elements
+c) Components
+d)None of above
+
+9) Which of the following are two ways to handle data in react?
+a) state and props
+b)State and services
+c)state and components
+d)Services and Component 
+
+10)Choose the method with refers to the parent class in ReactJS?
+a)this()
+b)super()
+c)inherits()
+d) all
+
+
+
+
