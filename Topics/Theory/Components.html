@@ -1,0 +1,90 @@
+_____________________________________________________________________________________
+<!-- 10)Types of Components -->
+Components are like functions that return HTML elements.
+
+Two Types of Components:Functional and ClassBased components
+<!-- we define a render() method that returns JSX, which represents the UI of the component. -->
+_____________________________________________________________________________________
+<!-- 11)Components type: class :with practical-->
+A class component must include the extends React.Component statement.
+ This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
+ The component also requires a render() method, this method returns HTML.
+ _____________________________________
+
+app.js: <Comp></Comp>
+<!--_______________________  -->
+
+import React from 'react';
+
+class ClassComp extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, World!</h1>
+        <p>This is a class-based component.</p>
+      </div>
+    );
+  }
+}
+
+export default ClassComp;
+<!-- __________________________ -->
+import React ,{ Component } from 'react';
+class ClassComp extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, World!</h1>
+        <p>This is a class-based component.</p>
+      </div>
+    );
+  }
+}
+
+export default ClassComp;
+<!--_________________________________________  -->
+_____________________________________________________________________________________
+
+<!-- 12)Components type: Functional -->
+A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand, and will be preferred in this tutorial.
+<!-- Functional components are a newer way of defining components in React. They are JavaScript functions that return JSX to describe the UI. Here's the equivalent example as a functional component: -->
+import React from 'react';
+
+const MyFunctionalComponent = () => {
+  return (
+    <div>
+      <h1>Hello, I'm a functional component!</h1>
+    </div>
+  );
+};
+
+export default MyFunctionalComponent;
+___________________________________________________________________________________
+<!-- Difference between Class and Functional components -->
+<!-- Class Components -->
+1)Class components are written as a JavaScript class.
+2)Class components have a state and can implement lifecycle methods like componentDidMount and componentDidUpdate.
+3)Slower as they have state and lifecycle, react needs to do comparatively more work to render these components.
+4)Class components require the boilerplate code, such as a constructor method and the use of “this” to access props and state.
+5)Class components use the “this” keyword is used to refer to the current instance of the component which can be confusing for new developers.
+
+<!-- Functional -->
+1)	Functional components are written as a JavaScript function.
+2)Functional components do not have a state or lifecycle methods.
+3)Faster as they do not have state and lifecycle, react needs to do less work to render these components.
+4)Functional components tend to be shorter and more concise
+5)Functional components do not use “this” at all, which makes them easier to understand for beginners.
+
+_____________________________________________________________________________________
+
+<!-- 17.Components Interaction -->
+_____________________________________________________________________________________
+<!-- 8)Connecting To Backend -->
+_____________________________________________________________________________________
+<!-- 9)Routing: -->
+_____________________________________________________________________________________
+<!-- 10)Forms/Props Types -->
+_____________________________________________________________________________________
+<!-- 11)Final Project on ReactJs -->
+_____________________________________________________________________________________
+<!-- 12)Redux: -->

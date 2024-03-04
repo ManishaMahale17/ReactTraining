@@ -1,0 +1,26 @@
+<!-- 16.Css use in react -->
+There are many ways to style React with CSS, this tutorial will take a closer look at three common ways:
+
+Inline styling
+CSS stylesheets
+CSS Modules
+
+<!-- 1.Inline Styling :styling in the example above is written inside two sets of curly braces {{}}-->
+<!-- <h1 style={{color: "red"}}>Hello Style!</h1>
+<h1 style={{backgroundColor: "lightblue"}}>Hello Style!</h1> -->
+
+<!-- 2.CSS stylesheets -->
+You can write your CSS styling in a separate file, just save the file with the .css file extension
+<!-- 3.CSS Modules -->
+CSS Modules are convenient for components that are placed in separate files.
+Create the CSS module with the .module.css extension, example: my-style.module.css.
+
+.bigblue {
+    color: DodgerBlue;
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+  }
+  <!-- import in js file -->
+  import styles from './my-style.module.css'; 
+_____________________________________________________________________________________

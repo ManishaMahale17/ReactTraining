@@ -1,0 +1,66 @@
+In React, you can conditionally render components.
+1)if Statement:
+
+Sure, here's the same example using an if statement instead of a ternary operator for conditional rendering:
+
+jsx
+Copy code
+import React from 'react';
+
+const Condirend = () => {
+  const isLoggedIn = true; // Example boolean value, you can replace it with your logic
+
+  // Define a variable to hold the JSX content based on the isLoggedIn state
+  let message;
+  if (isLoggedIn) {
+    message = <p>Welcome, User!</p>;
+  } else {
+    message = <p>Please log in to continue.</p>;
+  }
+
+  return (
+    <div>
+      {message}
+    </div>
+  );
+};
+
+export default Condirend;
+____________________________________________
+<!-- 2)Logical && Operator -->
+import React from 'react';
+
+const Condirend = () => {
+  const isLoggedIn = true; // Example boolean value, you can replace it with your logic
+
+  return (
+    <div>
+      {isLoggedIn && <p>Welcome, User!</p>}
+      {!isLoggedIn && <p>Please log in to continue.</p>}
+    </div>
+  );
+};
+
+export default Condirend;
+_________________________________________________________
+<!-- 3)Ternary Operator -->
+
+import React from 'react';
+
+const Condirend = () => {
+  const isLoggedIn = true; 
+
+  return (
+    <div>
+      {isLoggedIn ? (
+        <p>Welcome, User!</p>
+      ) : (
+        <p>Please log in to continue.</p>
+      )}
+    </div>
+  );
+};
+
+export default Condirend;
+_____________________________________________
+4) Using a switch Statement

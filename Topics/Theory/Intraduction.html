@@ -1,0 +1,120 @@
+<!-- 1)Why we learn ReactJs -->
+<!-- 2)What is Reactjs -->
+____________________________________________________________________________________
+<!-- 3)Prerequisite -->
+HTML,CSS,JAvscript,ES6
+____________________________________________________________________________________
+<!--4)Key-feature of reactJs:-->
+1)Components Based Architecture
+2)VDOM/RealDOM
+3)JSX
+4)Unidirectional Data flow
+5)Declarative Programming Style
+___________________________________________________________________________________
+<!-- 5)Software -->
+1)Sublime Text
+2)VSCode
+3)CodeSandBox
+4)WebStorm
+5)Jest
+6)Storybook
+____________________________________________________________________________________
+<!-- 6)Deffirence Between Angular and React -->
+***Angular *****
+1)Full-featured Framework – provides a strong opinion on how your application should be designed, as well as a number of tiny libraries that aid in the development of complex applications.follows the MVC (Model-View-Controller) architecture.
+
+2)Angular uses two-way data binding, meaning changes in the model automatically update the view, and vice versa.
+
+3)TypeScript is a statically typed language that is a superset of JavaScript
+4)Material Design Components –Angular includes a number of material design components that make UI configuration a breeze.
+5)Dependency injection is supported, allowing for separate life cycles for different stores.
+6)Angular has a steeper learning curve due to its comprehensive nature and the concepts it introduces such as dependency injection, services, and modules.
+
+******React*******
+1) React is a JavaScript library developed by Facebook. It follows the component-based architecture where UI is divided into reusable components. React focuses solely on the view layer of the application, allowing developers to choose other libraries or tools for additional functionalities like routing and state management.
+
+2)React primarily uses one-way data flow, where data flows downward from parent to child components. 
+
+3)React primarily uses JSX (JavaScript XML) which allows developers to write HTML-like code within JavaScript.
+
+4)Material-UI Library & Dependencies – Community-developed UI tools provide a wide range of UI components.
+
+5)React does not fully enable dependency injection because each component has its own global state.
+6)React has a shallower learning curve, especially for developers familiar with JavaScript and JSX. Its focus on components and one-way data flow makes it relatively easier to grasp.
+___________________________________________________________________________________
+<!-- How is React different from Angular? -->
+Ans: React is a JavaScript library, whereas Angular is a JavaScript framework built on TypeScript. The virtual DOM and one-way data binding are used by React.js, but the real DOM and two-way data binding are used by Angular. There’s also a speed difference (React is faster) and a difference in bundle size (React’s is smaller) (React works a bit faster).
+
+____________________________________________________________________________________
+<!-- 7)Installation -->
+1)Install Node.js: First check on cmd.... node -v ....If you haven't already, download and install Node.js from the official website: Node.js Download.
+2)Create a React App: Once Node.js is installed, you can create a new React application using create-react-app, which is an officially supported tool for creating React projects with a pre-configured setup.
+
+Open your terminal or command prompt and run the following command:
+<!-- npx create-react-app my-react-app -->
+3)Navigate to the Project Directory: Once the project is created, navigate to the project directory:
+<!-- cd my-react-app -->
+4)Start the Development Server: You can start the development server by running:
+<!-- npm start -->
+****Difference between npm and npx:***
+npx temporarily installs the package you want to use, executes the command, and then removes the package from your system.
+npm installs packages globally or locally in your project's node_modules directory.
+
+____________________________________________________________________________________
+<!-- 8)Folder Strucures  -->
+1)Root Directory:
+
+This is the main directory of your project where all other files and directories reside.
+It may contain configuration files like .gitignore,README.md, etc.
+
+2)Dependencies and Build Files:
+
+node_modules/: This directory contains all the dependencies installed via npm or yarn.
+package.json or package-lock.json (or yarn.lock): Configuration files that specify project dependencies and scripts.
+webpack.config.js, babel.config.js, or other build configuration files.
+
+3)Configuration:
+
+public/: This directory contains static assets that are served directly by the web server.
+index.html: The HTML template file where your application is injected.
+index.html: The main HTML file that serves as the entry point of your application.
+Images, fonts, and other static files that are directly referenced in your HTML or CSS.
+
+manifest.json file is an important part of building modern web applications, providing developers with control over the application's appearance and behavior across different platforms and devices.
+
+
+4)Source Code:
+
+src/: This directory contains all the source code files of your project.
+
+index.js : The main JavaScript file where your application is initialized.
+App.js, App.jsx: The main component file representing your application.
+Other components, stylesheets, images, and assets used in your application.
+
+
+
+_____________________________________________________________________________________
+<!--10.JSX-->
+
+JSX (JavaScript XML) is a syntax extension for JavaScript used with React to describe what the UI should look like. It allows you to write HTML-like code directly within your JavaScript code, making it easier to create and visualize UI components.
+_____________________________________________________________________________________
+<!--9)Hello world Program-->
+
+
+import React from 'react';
+
+// Define a functional component using JSX
+const MyComponent = () => {
+  // JSX code representing the UI
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+};
+
+export default MyComponent;
+___________________________________________________________________________________
+10)Fragments:
+<!-- React Fragments provide a way to group multiple React elements without adding extra nodes to the DOM. They allow you to return multiple elements from a component's render method without the need for a wrapper element. -->
+

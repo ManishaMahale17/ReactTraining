@@ -1,0 +1,62 @@
+<!-- React Lists -->
+import React from 'react'
+
+const List = () => {
+    const fruits=["apple", "banana", "grape","orange", "mango"]
+  return (
+    <div>
+      <h1>My list</h1>
+      <ul>
+        {fruits.map((fruit,index)=>(
+            <li key={index}>{fruit}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default List
+<!-- For object -->
+import React from 'react'
+
+const List = () => {
+    const cars=[
+        {id:1,name:"BMW"},
+        {id:2,name:"Audi"},
+        {id:3,name:"Swift"},
+        {id:4,name:"Kia"}
+    ]
+  return (
+    <div>
+      <h1>My list</h1>
+      <ul>
+        {cars.map((cars,index)=>(
+       <li key={index}>Name:{cars.name}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default list
+<!-- ___________________________________________________________________________________ -->
+<!-- Form -->
+import React from 'react';
+
+const Form = () => {
+    const handleForm = () => {
+        alert('Form submitted successfully');
+    };
+
+    return (
+        <div>
+            <form>
+                <input type="text" placeholder="Name" />
+                <input type="password" placeholder="Password" />
+                <button type="button" onClick={handleForm}>Submit</button>
+            </form>
+        </div>
+    );
+};
+
+export default Form;

@@ -1,0 +1,73 @@
+_____________________________________________________________________________________
+<!-- 13.what is props and its example -->
+Props (short for properties) are a mechanism for passing data from parent components to child components in React.
+import React from 'react';
+
+// Child component
+const Greeting = (props) => {
+  return <h1>Hello, {props.name}!</h1>;
+};
+
+// Parent component
+const App = () => {
+  return (
+    <div>
+      {/* Passing props to the Greeting component */}
+      <Greeting name="John" />
+      <Greeting name="Jane" />
+    </div>
+  );
+};
+
+export default App;
+_____________________________________________________________________________________
+
+<!-- 14.what is state and its example -->
+state is a built-in feature that allows components to manage their own data.
+State represents the dynamic data that can change over time and influences the rendering of the component
+<!--  -->
+
+import React from 'react';
+
+class ClassComp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      brand: "Ford",
+      model: "Mustang",
+      color: "red",
+      year: 1964
+    };
+  }
+  render() {
+    return (
+      <div>
+         <h1>My {this.state.brand}</h1>
+        <p>
+          It is a {this.state.color}
+          {this.state.model}
+          from {this.state.year}.
+        </p>
+      </div>
+    );
+  }
+}
+
+
+export default ClassComp;
+
+  ___________________________________________________________________________________
+  
+          **********************************
+          <!-- Diff between state and props -->
+          
+          
+          Props:
+          1)Props are used to pass data and event handlers to the children components
+          2)Props are immutable—once set, props cannot be changed
+          3)The parent component sets props for the children components
+
+         State:
+         1)State is used to store the data of the components that have to be rendered to the view
+         2)State holds the data and can change over time
+         3)Event handlers generally update state

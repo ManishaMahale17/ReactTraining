@@ -1,0 +1,46 @@
+<!-- Component Lifecycle -->
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+
+The three phases are: Mounting, Updating, and Unmounting.
+__________________________________________
+<!-- 1)Mounting -->
+__________________________________________
+Mounting means putting elements into the DOM.
+React has four built-in methods that gets called, in this order, when mounting a component:
+
+<!-- i)constructor(): -->
+The constructor() method is called before anything else, when the component is initiated
+
+<!-- ii)getDerivedStateFromProps() -->
+The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM
+
+<!-- iii)render() -->
+The render() method is required and will always be called, the others are optional and will be called if you define them.
+The render() method is required, and is the method that actually outputs the HTML to the DOM.
+<!-- iv)componentDidMount() -->
+The componentDidMount() method is called after the component is rendered.
+This is where you run statements that requires that the component is already placed in the DOM.
+
+__________________________________________
+<!-- 2)Updatating -->
+A component is updated whenever there is a change in the component's state or props.
+five built-in methods that gets called, in this order, when a component is updated
+<!-- i)getDerivedStateFromProps() -->
+This is the first method that is called when a component gets updated.
+<!-- ii)shouldComponentUpdate() -->
+shouldComponentUpdate() method you can return a Boolean value that specifies whether React should continue with the rendering or not.
+The default value is true.
+<!-- iii)render() -->
+The render() method is of course called when a component gets updated, it has to re-render the HTML to the DOM, with the new changes.
+<!-- iv)getSnapshotBeforeUpdate() -->
+method you have access to the props and state before the update, meaning that even after the update, you can check what the values were before the update.
+
+<!-- v)componentDidUpdate() -->
+The componentDidUpdate method is called after the component is updated in the DOM.
+
+__________________________________________
+<!-- 3)Unmounting -->only one built-in method
+<!-- i)componentWillUnmount() -->
+The componentWillUnmount method is called when the component is about to be removed from the DOM.
+
+

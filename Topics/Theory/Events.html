@@ -1,0 +1,27 @@
+
+<!-- Event handling -->
+Just like HTML DOM events, React can perform actions based on user events.
+
+React has the same events as HTML: click, change, mouseover etc.
+React events are written in camelCase syntax:
+
+onClick instead of onclick.
+<!-- onClick={shoot}  instead of onclick="shoot()". -->
+eg--->
+
+import React from 'react'
+
+const Eventss = () => {
+    const Shoot=()=>{
+        alert('Shooting...');
+    }
+  return (
+    <div>
+      <button onMouseMove={Shoot}>Shoot</button>
+    </div>
+  )
+}
+
+export default Eventss
+
+
